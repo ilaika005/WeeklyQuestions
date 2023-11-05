@@ -1,0 +1,50 @@
+Title: Moshe and the Computers
+---------------------------------------
+time limit per test: 2 seconds
+memory limit per test: 256 megabytes
+input: standard input
+output: standard output
+---------------------------------------
+Moshe has won n computers in different competitions. Each computer is either golden or silver. The computers are arranged in a row.
+
+The beauty of the arrangement is the length of the longest subsegment consisting of golden computers. Moshe wants to swap two computers (not necessarily adjacent ones) to make the arrangement as beautiful as possible — that means, to maximize the length of the longest such subsegment.
+
+Help Moshe! Tell him the maximum possible beauty of the arrangement if he is allowed to do at most one swap.
+
+Input
+The first line contains one integer n (2≤n≤105) — the number of computers.
+
+The second line contains n characters, each of them is either G or S. If the i-th character is G, then the i-th computer is a golden one, otherwise it's a silver computer.
+
+Output
+Print the maximum possible length of a subsegment of golden computers, if Moshe is allowed to do at most one swap.
+---------------------------------------
+Examples:
+
+<input>
+10
+GGGSGGGSGG
+
+<output>
+7
+
+<input>
+4
+GGGG
+
+<output>
+4
+
+<input>
+3
+SSS
+
+<output>
+0
+
+Explanation:
+In the first example Moshe has to swap computers with indices 4 and 10. Thus he will obtain the sequence "GGGGGGGSGS", the length of the longest subsegment of golden computers is 7.
+
+In the second example Moshe can make no swaps at all. The length of the longest subsegment of golden computers in the sequence is 4.
+
+In the third example Moshe cannot do anything to make the length of the longest subsegment of golden computers in the sequence greater than 0.
